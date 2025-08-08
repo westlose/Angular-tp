@@ -1,0 +1,92 @@
+{
+  "players": [
+    {
+      "id": "1",
+      "firstname": "Christiano",
+      "lastname": "Ronaldo",
+      "teamid": 1,
+      "position": "attaquant",
+      "age": 35
+    },
+    {
+      "id": "2",
+      "firstname": "Paolo",
+      "lastname": "Dybala",
+      "teamid": 1,
+      "position": "attaquant",
+      "age": 26
+    },
+    {
+      "id": "3",
+      "firstname": "Alejandro",
+      "lastname": "Gomez",
+      "teamid": 2,
+      "position": "attaquant",
+      "age": 34
+    },
+    {
+      "id": "4",
+      "firstname": "Duvan",
+      "lastname": "Zapata",
+      "teamid": 2,
+      "position": "attaquant",
+      "age": 28
+    },
+    {
+      "id": "5",
+      "firstname": "Sergio",
+      "lastname": "Ramos",
+      "teamid": 3,
+      "position": "milieu",
+      "age": 63
+    },
+    {
+      "id": "6",
+      "firstname": "Leonardo",
+      "lastname": "Bonucci",
+      "teamid": 1,
+      "position": "défenseur",
+      "age": 32
+    },
+    {
+      "id": "7",
+      "firstname": "Juan",
+      "lastname": "Quadrado",
+      "teamid": 1,
+      "position": "défenseur",
+      "age": 29
+    },
+    {
+      "id": "9",
+      "firstname": "Luka",
+      "lastname": "Modric",
+      "teamid": 3,
+      "position": "milieu",
+      "age": 33
+    },
+    {
+      "id": "10",
+      "firstname": "Rodrigo",
+      "lastname": "Betancur",
+      "teamid": 1,
+      "position": "milieu",
+      "age": 23
+    },
+    {
+      "firstname": "Abdessamad",
+      "lastname": "Namir",
+      "teamid": 1,
+      "position": "défenseur",
+      "age": 30,
+      "id": "acc4"
+    },
+    {
+      "id": "0f00",
+      "firstname": "Salaheddine",
+      "lastname": "Namir",
+      "teamid": 1,
+      "position": "défenseur",
+      "age": 27
+    }
+  ]
+}
