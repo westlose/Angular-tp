@@ -1,0 +1,48 @@
+<h2 class="page-title">Players</h2>
+
+@if (error()) {
+  <p class="error">{{ error() }}</p>
+} @else if (!players()) {
+  <p class="muted">Loading...</p>
+} @else {
+
+  <div class="players-grid">
+
+    <section class="panel">
+      <div class="filters">
+        <app-filter
+          label="Team"
+          [options]="teams()"
+          (changed)="onTeamChange($event)">
+        </app-filter>
+
+        <app-filter
+          label="Position"
+          [options]="positions()"
+          (changed)="onPosChange($event)">
+        </app-filter>
+      </div>
+
+      <app-player-list
+        [players]="filteredPlayers()"
+        (edit)="startEdit($event)"
+        (remove)="delete($event)">
+      </app-player-list>
+
+      <button class="btn" (click)="startCreate()">New player</button>
+    </section>
+
+    @if (editModel) {
+      <section class="panel form-panel">
+        <h3 class="panel-title">
+          {{ editModel.id ? 'Edit player' : 'New player' }}
+        </h3>
+        <app-player-form
+          [model]="editModel"
+          (saved)="saveFromForm($event)"
+          (cancelled)="cancelEdit()">
+        </app-player-form>
+      </section>
+    }
+  </div>
+}

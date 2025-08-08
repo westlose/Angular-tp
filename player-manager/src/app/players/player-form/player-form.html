@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <h3>{{ form.value.id ? 'Edit player' : 'New player' }}</h3>
+
+    <input placeholder="First name" formControlName="firstname" />
+    <input placeholder="Last name" formControlName="lastname" />
+    <input placeholder="Team id" type="number" formControlName="teamid" />
+
+    <!-- position dropdown wired to formControlName -->
+    <select formControlName="position">
+        <option value="" disabled>Select a role</option>
+        <option value="attaquant">attaquant</option>
+        <option value="défenseur">défenseur</option>
+        <option value="milieu">milieu</option>
+    </select>
+
+
+    <input placeholder="Age" type="number" formControlName="age" />
+
+    <div style="margin-top:.5rem; display:flex; gap:.5rem;">
+        <button type="submit" [disabled]="form.invalid">Save</button>
+        <button type="button" (click)="cancelled.emit()">Cancel</button>
+    </div>
+</form>

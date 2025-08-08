@@ -1,0 +1,10 @@
+<ul>
+  @for (p of players; track p.id) {
+    <li>
+      <strong>{{ p.firstname }} {{ p.lastname }}</strong>
+      — {{ p.position }} — team #{{ p.teamid }} — age {{ p.age }}
+      <button (click)="onEdit(p)">edit</button>
+      <button (click)="onDelete(p.id!)">delete</button>
+    </li>
+  }
+</ul>

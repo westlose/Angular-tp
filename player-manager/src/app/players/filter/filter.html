@@ -1,0 +1,9 @@
+<label>
+    {{ label }}
+    <select [(ngModel)]="value" (ngModelChange)="changed.emit(value || undefined)">
+        <option value="">-- All --</option>
+        @for (opt of options; track opt) {
+            <option [value]="opt">{{ opt }}</option>
+        }
+    </select>
+</label>
